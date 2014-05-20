@@ -16,7 +16,7 @@ A music beat box to play music by selecting the beats of corresponding instrumen
 
 ### Pre-requisites
 - Java SE 7 SDK (using Override & Anonymous class)
-- Java IDE (e.g. IntelliJ IDEA, Netbeans, Eclipse, etc)
+- Java IDE (e.g. IntelliJ IDEA, Netbeans, Eclipse, etc) (optional)
 
 ### Compiling (Windows, Manually)
 *All sources in com.abhisekp package*
