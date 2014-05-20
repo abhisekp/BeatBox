@@ -38,7 +38,7 @@ A music beat box to play music by selecting the beats of corresponding instrumen
 ### Import in Eclipse (Windows, OSX, Linux, Automatic)
 How to import BeatBox sources in Eclipse [see here](https://imgur.com/a/GM8Rf?gallery "Import BeatBox in Eclipse")
 
-## Future (@TODO)
+## Future (TODOs)
 - Save & Load Midi files from FileSystem
 - Send Midi using Network
 - Chat server & client to transmit music between peers
