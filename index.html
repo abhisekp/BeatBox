@@ -7,37 +7,38 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
+    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/abhisekp/BeatBox">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/abhisekp/BeatBox/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/abhisekp/BeatBox/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+
+      <header>
+        <h1>Beatbox</h1>
+        <p>Music Beat Box</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/abhisekp/BeatBox" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/abhisekp/BeatBox/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/abhisekp/BeatBox/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
 
     <div class="wrapper">
-
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
-        <div id="title">
-          <h1>Beatbox</h1>
-          <p>Music Beat Box</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/abhisekp">abhisekp</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
         <h1>
 <a name="beatbox" class="anchor" href="#beatbox"><span class="octicon octicon-link"></span></a>BeatBox</h1>
 
@@ -46,8 +47,48 @@
 </h3>
 
 <p>A music beat box to play music by selecting the beats of corresponding instruments.</p>
-      </section>
 
+<h2>
+<a name="building" class="anchor" href="#building"><span class="octicon octicon-link"></span></a>Building</h2>
+
+<p><strong>BeatBox.java</strong> - main class</p>
+
+<h3>
+<a name="pre-requisites" class="anchor" href="#pre-requisites"><span class="octicon octicon-link"></span></a>Pre-requisites</h3>
+
+<ul>
+<li>Java SE 7 SDK (using Override &amp; Anonymous class)</li>
+<li>Java IDE (e.g. IntelliJ IDEA, Netbeans, Eclipse, etc)</li>
+</ul><h3>
+<a name="compiling-windows-manually" class="anchor" href="#compiling-windows-manually"><span class="octicon octicon-link"></span></a>Compiling (Windows, Manually)</h3>
+
+<p><em>All sources in com.abhisekp package</em></p>
+
+<pre><code>cd src\ &amp;&amp; mkdir ..\out\
+javac -d ..\out\ com\abhisekp\BeatBox.java
+</code></pre>
+
+<h3>
+<a name="running-windows" class="anchor" href="#running-windows"><span class="octicon octicon-link"></span></a>Running (Windows)</h3>
+
+<pre><code>cd out\
+java com.abhisekp.BeatBox
+</code></pre>
+
+<h2>
+<a name="get-softwares" class="anchor" href="#get-softwares"><span class="octicon octicon-link"></span></a>Get Softwares</h2>
+
+<ul>
+<li><a href="http://www.jetbrains.com/idea/download/download_thanks.jsp">Jetbrains IntelliJ IDEA</a></li>
+<li><a href="https://netbeans.org/downloads/start.html?platform=windows&amp;lang=en&amp;option=javase">Netbeans</a></li>
+<li><a href="https://www.eclipse.org/downloads/packages/eclipse-standard-432/keplersr2">Eclipse</a></li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java SE 7 or 8 SDK</a></li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/abhisekp">abhisekp</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
