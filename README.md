@@ -27,7 +27,7 @@ A music beat box to play music by selecting the beats of corresponding instrumen
 	javac -d ..\out\ com\abhisekp\BeatBox.java
 
 ### Import in Eclipse (Windows, OSX, Linux, Automatic)
-How to import BeatBox sources in Eclipse [See here](https://imgur.com/a/GM8Rf?gallery "Import BeatBox in Eclipse")
+How to import BeatBox sources in Eclipse [see here](https://imgur.com/a/GM8Rf?gallery "Import BeatBox in Eclipse")
 
 ### Running (Windows)
 	cd ..\out\
@@ -43,6 +43,3 @@ How to import BeatBox sources in Eclipse [See here](https://imgur.com/a/GM8Rf?ga
 - [Netbeans](https://netbeans.org/downloads/start.html?platform=windows&lang=en&option=javase)
 - [Eclipse](https://www.eclipse.org/downloads/packages/eclipse-standard-432/keplersr2)
 - [Java SE 7 or 8 SDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-
-## How to
-### Import Project 
