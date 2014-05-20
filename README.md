@@ -28,7 +28,7 @@ A music beat box to play music by selecting the beats of corresponding instrumen
 	cd ..\out\
 	java com.abhisekp.BeatBox
 
-### Future
+## Future
 - Save & Load Midi files
 - Send Midi using Network
 - Chat server & client
