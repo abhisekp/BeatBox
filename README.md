@@ -28,6 +28,11 @@ A music beat box to play music by selecting the beats of corresponding instrumen
 	cd ..\out\
 	java com.abhisekp.BeatBox
 
+### Future
+- Save & Load Midi files
+- Send Midi using Network
+- Chat server & client
+
 ## Get Softwares
 - [Jetbrains IntelliJ IDEA](http://www.jetbrains.com/idea/download/download_thanks.jsp)
 - [Netbeans](https://netbeans.org/downloads/start.html?platform=windows&lang=en&option=javase)
