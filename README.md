@@ -3,13 +3,13 @@
 A music beat box to play music by selecting the beats of corresponding instruments.
 
 ## Concepts Used
-- Package [com.abhisekp]
-- Class [encapsulation of methods(behaviour) and fields(variables or state)]
-- Class member access specifier [public, private]
-- Swing GUI API [JFrame, JPanel, BoxLayout, GridLayout, JButton, JCheckbox]
-- Event Listeners [addActionListener()]
-- Inner class or Anonymous class [used to add event listeners]
-- Sound API [Sequencer, Sequence, Track, MidiEvent]
+- Package [*com.abhisekp*]
+- Class [*encapsulation of methods(behaviour) and fields(variables or state)*]
+- Class member access specifier [*public, private*]
+- Swing GUI API [*JFrame, JPanel, BoxLayout, GridLayout, JButton, JCheckbox*]
+- Event Listeners [*addActionListener()*]
+- Inner class or Anonymous class [*used to add event listeners*]
+- Sound API [*Sequencer, Sequence, Track, MidiEvent*]
 
 ## Building
 **BeatBox.java** - main class
@@ -25,7 +25,7 @@ A music beat box to play music by selecting the beats of corresponding instrumen
 	javac -d ..\out\ com\abhisekp\BeatBox.java
 
 ### Running (Windows)
-	cd out\
+	cd ..\out\
 	java com.abhisekp.BeatBox
 
 ## Get Softwares

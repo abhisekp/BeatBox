@@ -8,10 +8,10 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 /**
- * Author: Abhisek Pattnaik <abhisekp@engineer.com>
- * Creation Date: 19-05-2014 09:45 AM
- * Description:-
- * Beat Box
+ * This is a Beat Box used to generate Midi sounds of various Drum Kits
+ * @author Abhisek Pattnaik &lt;abhisekp@engineer.com&gt;
+ * @version 0.2
+ * @since 0.1
  */
 public class BeatBox {
 	private Sequencer sequencer;
@@ -217,6 +217,7 @@ public class BeatBox {
 	public void resetPlayer() {
 		stopPlayer();
 		BPM = 120;
+		updateTitle();
 
 		for (JCheckBox aCheckboxList : checkboxList) {
 			aCheckboxList.setSelected(false);
@@ -312,6 +313,17 @@ public class BeatBox {
 				tempoDownPlayer();
 			}
 		});
+
+		for(JCheckBox aCheckboxList:checkboxList) {
+			aCheckboxList.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					if (sequencer.isRunning()) {
+						restartPlayer();
+					}
+				}
+			});
+		}
 	}
 
 	private MidiEvent makeEvent(int cmd, int chan, int data1, int data2, long tick) {
