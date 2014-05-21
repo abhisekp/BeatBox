@@ -3,13 +3,11 @@ package com.abhisekp;
 import javax.sound.midi.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 /**
  * This is a Beat Box used to generate Midi sounds of various Drum Kits
- * @author Abhisek Pattnaik &lt;abhisekp@engineer.com&gt;
+ *
  * @version 0.2
  * @since 0.1
  */
@@ -72,13 +70,7 @@ public class BeatBox {
 	private void setupGUI() {
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (InstantiationException e) {
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			e.printStackTrace();
-		} catch (UnsupportedLookAndFeelException e) {
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
 			e.printStackTrace();
 		}
 
@@ -166,9 +158,7 @@ public class BeatBox {
 
 			isPlaying = false;
 			isEmptyNoteEvents = true;
-		} catch (MidiUnavailableException e) {
-			e.printStackTrace();
-		} catch (InvalidMidiDataException e) {
+		} catch (MidiUnavailableException | InvalidMidiDataException e) {
 			e.printStackTrace();
 		}
 	}
@@ -194,9 +184,7 @@ public class BeatBox {
 			if (isEmptyNoteEvents) {
 				stopPlayer();
 			}
-		} catch (MidiUnavailableException e) {
-			e.printStackTrace();
-		} catch (InvalidMidiDataException e) {
+		} catch (MidiUnavailableException | InvalidMidiDataException e) {
 			e.printStackTrace();
 		}
 
@@ -226,14 +214,14 @@ public class BeatBox {
 
 	public void tempoUpPlayer() {
 		BPM += 50;
-		if(sequencer.isRunning()){
+		if (sequencer.isRunning()) {
 			restartPlayer();
 		}
 	}
 
 	public void tempoDownPlayer() {
 		BPM -= 50;
-		if(sequencer.isRunning()){
+		if (sequencer.isRunning()) {
 			restartPlayer();
 		}
 	}
@@ -273,54 +261,17 @@ public class BeatBox {
 		}
 	}
 
-	public void createListeners() {
-		playBTN.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// start playing after generating
-				startPlayer();
-			}
-		});
+	private void createListeners() {
+		playBTN.addActionListener(e -> startPlayer());
+		stopBTN.addActionListener(e -> stopPlayer());
+		resetBTN.addActionListener(e -> resetPlayer());
+		tempoUpBTN.addActionListener(e -> tempoUpPlayer());
+		tempoDownBTN.addActionListener(e -> tempoDownPlayer());
 
-		stopBTN.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// stop playing & clear sequence
-				stopPlayer();
-			}
-		});
-
-		resetBTN.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// stop the player & clear checkboxes
-				resetPlayer();
-			}
-		});
-
-		tempoUpBTN.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// speed up player
-				tempoUpPlayer();
-			}
-		});
-
-		tempoDownBTN.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// speed up player
-				tempoDownPlayer();
-			}
-		});
-
-		for(JCheckBox aCheckboxList:checkboxList) {
-			aCheckboxList.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					if (sequencer.isRunning()) {
-						restartPlayer();
-					}
+		for (JCheckBox aCheckboxList : checkboxList) {
+			aCheckboxList.addActionListener(e -> {
+				if (sequencer.isRunning()) {
+					restartPlayer();
 				}
 			});
 		}
