@@ -18,7 +18,7 @@
 
       <header>
         <h1>Beatbox</h1>
-        <p>Music Beat Box</p>
+        <p>A Music Beat Box</p>
       </header>
 
       <div id="banner">
@@ -49,6 +49,9 @@
 <p>A music beat box to play music by selecting the beats of corresponding instruments.
 <img src="https://i.imgur.com/L9JHQ1o.png" alt="BeatBox App" title="BeatBox App"></p>
 
+<p>Video Demo: <a href="http://youtu.be/lTfO8-perP8" title="BeatBox App Visual Demo">http://youtu.be/lTfO8-perP8</a>
+Audio Audio: <a href="https://soundcloud.com/abhisekp/beatbox-demo" title="BeatBox App Music Demo">https://soundcloud.com/abhisekp/beatbox-demo</a></p>
+
 <h2>
 <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
 
@@ -76,22 +79,48 @@
 <a name="pre-requisites" class="anchor" href="#pre-requisites"><span class="octicon octicon-link"></span></a>Pre-requisites</h3>
 
 <ul>
-<li>Java SE 7 SDK (using Override &amp; Anonymous class)</li>
-<li>Java IDE (e.g. IntelliJ IDEA, Netbeans, Eclipse, etc) (optional)</li>
+<li>Java SE 7+ SDK (Reason: Using Override &amp; Anonymous class)</li>
+<li>Java IDE (e.g. IntelliJ IDEA, Netbeans, Eclipse, etc) (<em>optional</em>)</li>
 </ul><h3>
-<a name="compiling-windows-manually" class="anchor" href="#compiling-windows-manually"><span class="octicon octicon-link"></span></a>Compiling (Windows, Manually)</h3>
+<a name="compiling-from-source-manually" class="anchor" href="#compiling-from-source-manually"><span class="octicon octicon-link"></span></a>Compiling from Source (manually)</h3>
 
 <p><em>All sources in com.abhisekp package</em></p>
+
+<h3>
+<a name="in-windows" class="anchor" href="#in-windows"><span class="octicon octicon-link"></span></a>In Windows</h3>
 
 <pre><code>cd src\ &amp;&amp; mkdir ..\out\
 javac -d ..\out\ com\abhisekp\BeatBox.java
 </code></pre>
 
 <h3>
-<a name="running-windows" class="anchor" href="#running-windows"><span class="octicon octicon-link"></span></a>Running (Windows)</h3>
+<a name="in-linux" class="anchor" href="#in-linux"><span class="octicon octicon-link"></span></a>In Linux</h3>
+
+<pre><code>cd src/ &amp;&amp; mkdir ../out/
+javac -d ../out/ com/abhisekp/BeatBox.java
+</code></pre>
+
+<h2>
+<a name="running-manually-built" class="anchor" href="#running-manually-built"><span class="octicon octicon-link"></span></a>Running Manually Built</h2>
+
+<h3>
+<a name="in-windows-1" class="anchor" href="#in-windows-1"><span class="octicon octicon-link"></span></a>In Windows</h3>
 
 <pre><code>cd ..\out\
 java com.abhisekp.BeatBox
+</code></pre>
+
+<h3>
+<a name="in-linux-1" class="anchor" href="#in-linux-1"><span class="octicon octicon-link"></span></a>In Linux</h3>
+
+<pre><code>cd ../out/
+java com.abhisekp.BeatBox
+</code></pre>
+
+<h2>
+<a name="running-packaged-jar" class="anchor" href="#running-packaged-jar"><span class="octicon octicon-link"></span></a>Running Packaged jar</h2>
+
+<pre><code>java -jar "Mini Music Player.jar"
 </code></pre>
 
 <h3>
@@ -103,7 +132,7 @@ java com.abhisekp.BeatBox
 <a name="future-todos" class="anchor" href="#future-todos"><span class="octicon octicon-link"></span></a>Future (TODOs)</h2>
 
 <ul>
-<li>Save &amp; Load Midi files from FileSystem</li>
+<li>Save &amp; Load Midi files from FileSystem (.wav or .midi)</li>
 <li>Send Midi using Network</li>
 <li>Chat server &amp; client to transmit music between peers</li>
 <li>Upload Midi music to Online Sound Storage services (e.g. SoundCloud)</li>
@@ -114,7 +143,7 @@ java com.abhisekp.BeatBox
 <li><a href="http://www.jetbrains.com/idea/download/download_thanks.jsp">Jetbrains IntelliJ IDEA</a></li>
 <li><a href="https://netbeans.org/downloads/start.html?platform=windows&amp;lang=en&amp;option=javase">Netbeans</a></li>
 <li><a href="https://www.eclipse.org/downloads/packages/eclipse-standard-432/keplersr2">Eclipse</a></li>
-<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java SE 7 or 8 SDK</a></li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java SE SDK</a></li>
 </ul>
       </section>
       <footer>
