@@ -3,6 +3,9 @@
 A music beat box to play music by selecting the beats of corresponding instruments.
 ![BeatBox App](https://i.imgur.com/L9JHQ1o.png "BeatBox App")
 
+Video Demo: [http://youtu.be/lTfO8-perP8](http://youtu.be/lTfO8-perP8 "BeatBox App Visual Demo")
+Audio Audio: [https://soundcloud.com/abhisekp/beatbox-demo](https://soundcloud.com/abhisekp/beatbox-demo "BeatBox App Music Demo")
+
 ## Features
 - Play & Stop music or Reset player to default
 - Change Playback speed
