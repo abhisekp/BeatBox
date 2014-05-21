@@ -21,25 +21,36 @@ A music beat box to play music by selecting the beats of corresponding instrumen
 **BeatBox.java** - main class
 
 ### Pre-requisites
-- Java SE 7 SDK (using Override & Anonymous class)
-- Java IDE (e.g. IntelliJ IDEA, Netbeans, Eclipse, etc) (optional)
+- Java SE 7+ SDK (Reason: Using Override & Anonymous class)
+- Java IDE (e.g. IntelliJ IDEA, Netbeans, Eclipse, etc) (*optional*)
 
-### Compiling (Windows, Manually)
+### Compiling from Source (manually)
 *All sources in com.abhisekp package*
-
+### In Windows
 	cd src\ && mkdir ..\out\
 	javac -d ..\out\ com\abhisekp\BeatBox.java
 
+### In Linux
+	cd src/ && mkdir ../out/
+	javac -d ../out/ com/abhisekp/BeatBox.java
 
-### Running (Windows)
+## Running Manually Built 
+### In Windows
 	cd ..\out\
 	java com.abhisekp.BeatBox
+	
+### In Linux
+	cd ../out/
+	java com.abhisekp.BeatBox
+
+## Running Packaged jar
+	java -jar "Mini Music Player.jar"
 
 ### Import in Eclipse (Windows, OSX, Linux, Automatic)
 How to import BeatBox sources in Eclipse [see here](https://imgur.com/a/GM8Rf?gallery "Import BeatBox in Eclipse")
 
 ## Future (TODOs)
-- Save & Load Midi files from FileSystem
+- Save & Load Midi files from FileSystem (.wav or .midi)
 - Send Midi using Network
 - Chat server & client to transmit music between peers
 - Upload Midi music to Online Sound Storage services (e.g. SoundCloud)
@@ -48,4 +59,4 @@ How to import BeatBox sources in Eclipse [see here](https://imgur.com/a/GM8Rf?ga
 - [Jetbrains IntelliJ IDEA](http://www.jetbrains.com/idea/download/download_thanks.jsp)
 - [Netbeans](https://netbeans.org/downloads/start.html?platform=windows&lang=en&option=javase)
 - [Eclipse](https://www.eclipse.org/downloads/packages/eclipse-standard-432/keplersr2)
-- [Java SE 7 or 8 SDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+- [Java SE SDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
