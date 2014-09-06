@@ -1,4 +1,5 @@
 # BeatBox
+[![Gitter chat](https://badges.gitter.im/abhisekp/ComputerEnthusiasts.png)](https://gitter.im/abhisekp/ComputerEnthusiasts)
 ### *Create Music on Go*
 A music beat box to play music by selecting the beats of corresponding instruments.
 ![BeatBox App](https://i.imgur.com/L9JHQ1o.png "BeatBox App")
